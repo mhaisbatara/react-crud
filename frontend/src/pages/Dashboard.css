@@ -1,0 +1,155 @@
+.dash-container * {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* body {
+  margin: 0;
+} */
+
+/* BACKGROUND */
+.dash-container {
+  min-height: 100vh;
+  padding: 30px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+/* TITLE */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* CARD (FORM) */
+.card {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 25px;
+  padding: 25px;
+
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* INPUT */
+.form input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+.form input::placeholder {
+  color: #ddd;
+}
+
+/* BUTTON */
+.form button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form button:hover {
+  transform: scale(1.03);
+}
+
+.cancel {
+  background: gray;
+}
+
+/* TABLE CARD */
+.table-card {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+
+  backdrop-filter: blur(15px);
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 15px;
+}
+
+/* TABLE */
+.dash-container table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  padding: 14px;
+  background: rgba(255,255,255,0.2);
+}
+
+td {
+  padding: 14px;
+}
+
+tr {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+tr:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+/* DESKRIPSI BIAR RAPI */
+td:nth-child(5) {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* AKSI */
+td:last-child {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* BUTTON AKSI */
+.edit {
+  background: #ffc107;
+  color: black;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  td:last-child {
+    flex-direction: column;
+  }
+}
